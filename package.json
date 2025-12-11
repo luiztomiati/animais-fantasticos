@@ -1,5 +1,5 @@
 {
-  "name": "animais-eslint",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -17,5 +17,9 @@
     "eslint": "^9.18.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.28.4",
+    "regenerator-runtime": "^0.14.1"
   }
 }

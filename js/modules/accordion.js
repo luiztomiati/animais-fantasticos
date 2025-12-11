@@ -19,5 +19,6 @@ export default class initAccordion {
       this.activeAccordion(this.accordionList[0]);
       this.addAccordionEvent();
     }
+    return this;
   }
 }

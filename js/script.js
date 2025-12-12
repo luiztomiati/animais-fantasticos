@@ -32,10 +32,6 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
-
-fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
-
 const animacaoScroll = new AnimacaoScroll('[data-anime="scroll"]');
 animacaoScroll.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]', [
@@ -49,3 +45,7 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
+
+fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');

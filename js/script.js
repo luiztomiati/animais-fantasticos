@@ -9,6 +9,7 @@ import initFuncionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import TabNav from './modules/tabnav.js';
+import debounce from './modules/debounce.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -37,3 +38,4 @@ animacaoScroll.init();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
+debounce();

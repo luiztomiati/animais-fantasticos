@@ -8,13 +8,15 @@ export default class DropdownMenu {
     } else {
       this.action = action;
     }
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(event) {
     event.preventDefault();
-    this.classList.add('active');
-    outsideClick(this, this.action, () => {
-      this.classList.remove('active');
+    const element = event.currentTarget;
+    element.classList.add('active');
+    outsideClick(element, this.action, () => {
+      element.classList.remove('active');
     });
   }
   init() {

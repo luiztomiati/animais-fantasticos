@@ -1,5 +1,5 @@
 import ScrollSuave from './modules/scroll-suave.js';
-import initAnimacaoScroll from './modules/scroll-animacao.js';
+import AnimacaoScroll from './modules/scroll-animacao.js';
 import Accordion from './modules/accordion.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
@@ -32,7 +32,8 @@ const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
-initAnimacaoScroll();
+const animacaoScroll = new AnimacaoScroll('[data-anime="scroll"]');
+animacaoScroll.init();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();

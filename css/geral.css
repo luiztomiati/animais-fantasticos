@@ -13,7 +13,7 @@ ul {
 }
 
 body {
-  background: #faf6ed;
+  background: #fff;
   color: #222;
   -webkit-font-smoothing: antialiased;
 }
@@ -75,7 +75,7 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1rem;
-  color: #E54;
+  color: #55BBFF;
 }
 
 .animais h2::before {
@@ -130,20 +130,21 @@ body {
 }
 
 .faq-lista dt {
-  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: .5rem;
-  color: #E54;
+  color: #333333;
+  font-size: large;
 }
 
 .faq-lista dt::before {
   content: '';
   display: inline-block;
-  width: 20px;
+  width: 10px;
   height: 10px;
+  border-radius: 50%;
   margin-right: 10px;
-  background: #FB5;
+  background: #55BBFF;
 }
 
 .faq-lista dd {

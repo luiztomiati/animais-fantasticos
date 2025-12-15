@@ -3,7 +3,6 @@ import AnimacaoScroll from './modules/scroll-animacao.js';
 import Accordion from './modules/accordion.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
-import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import Funcionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetch-animais.js';
@@ -35,12 +34,6 @@ tooltip.init();
 
 const animacaoScroll = new AnimacaoScroll('[data-anime="scroll"]');
 animacaoScroll.init();
-const dropdownMenu = new DropdownMenu('[data-dropdown]', [
-  'touchstart',
-  'click',
-]);
-dropdownMenu.init();
-
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
